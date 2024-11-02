@@ -22,6 +22,7 @@ const DashBoard = () => {
   };
 
   const loadData = async (start: string, end: string) => {
+    console.log({ start }, { end });
     try {
       const responseData = await fetchBookings(start, end);
       console.log("Fetched Data:", responseData.data);
